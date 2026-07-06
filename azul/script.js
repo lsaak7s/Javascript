@@ -17,14 +17,14 @@ console.log(isaac) */
 
 
 
-    /*
+/*
 const user = [
-    { value: 10, myAge: 17, myName: "Isaac" },
-    { value: 20, myAge: 18, myName: "John" },
-    { value: 30, myAge: 19, myName: "Jane" },
-    { value: 40, myAge: 20, myName: "Bob" },
-    { value: 50, myAge: 21, myName: "Alice" },
-    { value: 60, myAge: 22, myName: "Charlie" }
+{ value: 10, myAge: 17, myName: "Isaac" },
+{ value: 20, myAge: 18, myName: "John" },
+{ value: 30, myAge: 19, myName: "Jane" },
+{ value: 40, myAge: 20, myName: "Bob" },
+{ value: 50, myAge: 21, myName: "Alice" },
+{ value: 60, myAge: 22, myName: "Charlie" }
 
 ];
 
@@ -34,16 +34,16 @@ console.log(user[1]); */
 
 
 
-    /*
+/*
 const media = 7
 const notaAluno = 7
 
 if (media >= notaAluno) {
-    console.log("Aprovado")
+console.log("Aprovado")
 }
 
 else {
-    console.log("Reprovado")
+console.log("Reprovado")
 }
 
 
@@ -51,20 +51,20 @@ const senha = "123456"
 const senhaDigitada = "123456"
 
 if (senha == senhaDigitada) {
-    console.log("Senha correta")
+console.log("Senha correta")
 } else {
-    console.log("Senha incorreta")
+console.log("Senha incorreta")
 }*/
 
 
 
 
-    /*
-    function HelloWorld() {
+/*
+function HelloWorld() {
 
-        console.log("Hello World")
+    console.log("Hello World")
 
-    }
+}
 
 HelloWorld() */
 
@@ -105,6 +105,17 @@ function aperteiNoButton() {
 const select = document.querySelector("#select")
 
 select.addEventListener("change", function() {
-    console.log(select.value)
-}) */
+    console.log(select.value)})*/
 
+/*const value = Math.pow(5, 1)
+console.log(value)*/
+/* const value = Math.sqrt(125,5)
+ console.log(value)*/
+/*  const value = Math.PI
+  console.log(value)*//*
+const value = Math.ceil(5.1)
+console.log(value)*//*
+const value = Math.floor(5.1)
+console.log(value)*//*
+const value = Math.random()
+console.log(value)*/
