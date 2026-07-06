@@ -119,3 +119,4 @@ const value = Math.floor(5.1)
 console.log(value)*//*
 const value = Math.random()
 console.log(value)*/
+
