@@ -9,14 +9,9 @@ const isaac = {
         Zip: "12345",
     }
 
-
-
 }
 isaac.myName = "Isaac7"
 console.log(isaac)
-
-
-
 
 const user = [
     { value: 10, myAge: 17, myName: "Isaac" },
@@ -30,11 +25,6 @@ const user = [
 
 console.log(user[1]);
 
-
-
-
-
-
 const media = 7
 const notaAluno = 7
 
@@ -46,7 +36,6 @@ else {
     console.log("Reprovado")
 }
 
-
 const senha = "123456"
 const senhaDigitada = "123456"
 
@@ -56,10 +45,6 @@ if (senha == senhaDigitada) {
     console.log("Senha incorreta")
 }
 
-
-
-
-
 function HelloWorld() {
 
     console.log("Hello World")
@@ -68,23 +53,14 @@ function HelloWorld() {
 
 HelloWorld()
 
-
-
-
-
 const azul123 = document.querySelector("input")
 azul123.placeholder = "Digite algo aqui..."
 azul123.value = "Digite algo aqui........................"
 console.log(azul123.placeholder)
 
-
-
-
 const botton = document.querySelector("#azul123")
 
 button.style.backgroundColor = "yellow"
-
-
 
 function alertbutton(button) {
     alert("Button clicked!")
@@ -99,8 +75,6 @@ function aperteiNoButton() {
     console.log(input.value)
 
 }
-
-
 
 const select = document.querySelector("#select")
 
@@ -120,7 +94,6 @@ const value = Math.floor(5.1)
 console.log(value)
 const value = Math.random()
 console.log(value)
-
 
 let result = 10 + 5
 result= 70
@@ -158,7 +131,6 @@ delete myObject.cidade
  typeof diz qual o tipo number string etc
 console.log(typeof myObject)
 
-
 const temp = 41
 
 if (temp <= 33) {
@@ -172,5 +144,38 @@ else if (temp >= 41 && temp <= 45) {
 } else if (temp >= 46) {
     console.log("Esta com muita febre")
 }
-*/
 
+Operador ternario
+ ? = if 
+ : = else
+ && = else if (E tambem somente o IF)
+
+const salario = 15000
+salario <= 3000 ? console.log("junior") : salario >= 3000  && salario <=8000 ? console.log("pleno") : salario >= 8001  && salario <=15000 ? console.log("Senior") : console.log("Diretor") 
+
+const temp = 10
+switch (temp) {
+    case 20:
+        console.log("frio")
+        break;
+    case 30:
+        console.log("medio")
+        break;
+    case 40:
+        console.log("quente")
+        break;
+    case 50:
+        console.log("slk")
+        break;
+    default: console.log("Não achei")
+        break;
+}
+
+setTimeout( () =>  {
+    console.log("Oi")
+}, 3000);
+
+let nunber = 0
+setInterval(() => {
+    console.log(nunber++)
+}, 1000);*/
