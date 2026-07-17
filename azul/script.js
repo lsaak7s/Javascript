@@ -135,5 +135,42 @@ if (p !== o) {
 else{
     console.log("p é igual a o")
 }
+
+Operadores logicos
+const senha = false
+const token = false
+const usuario = true
+
+if (!(senha || token || usuario)) {
+    console.log("Acesso permitido")
+} else {
+    console.log("Acesso negado")
+}
+
+const myObject = {
+    nome: "Isaac",
+    idade: 17,
+    cidade: "São Paulo"
+}
+const my = "30"
+ apaga um parametro
+delete myObject.cidade
+ typeof diz qual o tipo number string etc
+console.log(typeof myObject)
+
+
+const temp = 41
+
+if (temp <= 33) {
+    console.log("Esta com hiportemia")
+}
+else if (temp >= 34 && temp <= 40) {
+    console.log("Esta Saudavel")
+}
+else if (temp >= 41 && temp <= 45) {
+    console.log("Esta com febre")
+} else if (temp >= 46) {
+    console.log("Esta com muita febre")
+}
 */
 
