@@ -178,4 +178,21 @@ setTimeout( () =>  {
 let nunber = 0
 setInterval(() => {
     console.log(nunber++)
-}, 1000);*/
+}, 1000);
+//Array
+const users = [
+  "maria1",
+  "maria2",
+  "maria3",
+  "maria4",
+  "maria5",
+  "maria6",
+  "maria7",
+  "maria8",
+];
+    // inicialização    condição  Oque fazer no final
+for (let i = 1; i < users.length; i++) {
+ // length No Array ele vai pegar A quantidade Numerica ou as palavras
+  console.log(users[i]);
+}
+*/
