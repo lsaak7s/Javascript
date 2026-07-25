@@ -195,11 +195,26 @@ for (let i = 1; i < users.length; i++) {
  // length No Array ele vai pegar A quantidade Numerica ou as palavras
   console.log(users[i]);
 }
-for of ele para sozinho
+for of 
+ele para sozinho
 const myname = "isaac"
 const nomes = [ "joao", "jo", "ja",]
  o propio modo analizar que vira a variavel
 for (const name of nomes) {
     console.log(name)
 }
-*/
+
+
+const user = { nome: "isaac", age: "20", street: "Rua Merachal" }
+// for in ele pega chave ex nome,age,street
+for (const key in user) {
+    //Agora se quiser pegar o valor tambem 
+    // usando desse jeito ele esta pegando os valores tambem 
+    console.log(`${key} ${user[key]}`)
+
+}*/
+let i  = 0
+while (i < 30) {
+    i++;
+    console.log(i)
+}
