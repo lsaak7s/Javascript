@@ -212,9 +212,19 @@ for (const key in user) {
     // usando desse jeito ele esta pegando os valores tambem 
     console.log(`${key} ${user[key]}`)
 
-}*/
+}
 let i  = 0
-while (i < 30) {
+console.log("name")
+Ele verifica  depois faz
+while (i < 1) {
     i++;
     console.log(i)
 }
+console.log("name")
+faz e depois verifica  
+let i = 0
+do {
+    i++
+    console.log(i)
+
+} while (i < 30);*/
