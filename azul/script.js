@@ -227,4 +227,38 @@ do {
     i++
     console.log(i)
 
-} while (i < 30);*/
+} while (i < 30);
+const html = document.getElementById("htm")
+const pessoas = [
+    {
+        nome: "Amanda",
+        idade: 22,
+        contato: "11987654321"
+    },
+    {
+        nome: "Bruno",
+        idade: 28,
+        contato: "11991234567"
+    },
+    {
+        nome: "Carla",
+        idade: 19,
+        contato: "11999887766"
+    },
+    {
+        nome: "Diego",
+        idade: 31,
+        contato: "11995554433"
+    },
+    {
+        nome: "Fernanda",
+        idade: 25,
+        contato: "11993332211"
+    }
+];
+//foreach ele eo mais completo, porem ele não tem o braek
+pessoas.forEach((element, index) => {
+//Aqui e o templet string, junta texto com vatiavel
+    console.log(`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
+    html.innerHTML = (`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
+});*/
