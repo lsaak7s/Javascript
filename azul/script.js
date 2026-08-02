@@ -261,4 +261,29 @@ pessoas.forEach((element, index) => {
 //Aqui e o templet string, junta texto com vatiavel
     console.log(`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
     html.innerHTML = (`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
-});*/
+});
+parametros das funçoes é possivel colocar um valor padrao caso nao seja passado nenhum valor
+function test(message, value = 0 ) {
+    console.log(message, value)
+}
+test( "that`t Amazing" , 1)
+
+function menos (value1 , value2){
+    console.log(value1 - value2)
+    console.log("o")
+}
+menos(10,20)
+function mais (value1 , value2){
+    console.log(value1 + value2)
+}
+mais(10,20)
+function mult (value1 , value2){
+    console.log(value1 * value2)
+}
+mult(10,20)
+function div (value1 , value2){
+    console.log(value1 / value2)
+}
+div(10,20)*/
+
+const cart = [11, 2, 30, 41, 52]
