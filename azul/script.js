@@ -284,6 +284,40 @@ mult(10,20)
 function div (value1 , value2){
     console.log(value1 / value2)
 }
-div(10,20)*/
+div(10,20)
 
-const cart = [11, 2, 30, 41, 52]
+Caixa de desconto, se o valor for maior que 30 ele tera desconto de 10% caso contrario nao tera desconto
+
+const desconto = 0.10
+const cart = [11, 30, 2, 41, 52]
+Aqui ele vai separar os valores com desconto e sem desconto
+const ComDesconto = []
+const SemDesconto = []
+Aqui ele vai fazer a verificação se o valor e maior que 30 ele vai aplicar o desconto e colocar no array ComDesconto caso contrario ele vai colocar no array SemDesconto
+for (let i = 0; i < cart.length; i++) {
+    if (cart[i] >= 30) {
+     Ele vai dizer em qual possição ele estar [i]
+        const test = cart[i] - (cart[i] * desconto);
+        Aqui ele vai colocar o valor com desconto no array ComDesconto
+        ComDesconto.push(test)
+    }
+    else {
+        SemDesconto.push(cart[i])
+    }
+}
+
+ let total = 0
+
+for (let i = 0; i < ComDesconto.length; i++) {
+A mesma coisa fazer total = total + o valor
+    total += ComDesconto[i]
+}
+
+for (let i = 0; i < SemDesconto.length; i++) {
+    total += SemDesconto[i]
+}
+Aqui ele vai arredondar o valor para baixo, caso queira arredondar para cima usar Math.ceil(total)
+console.log(Math.floor(total))*/
+
+
+
