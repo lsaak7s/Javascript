@@ -227,4 +227,97 @@ do {
     i++
     console.log(i)
 
-} while (i < 30);*/
+} while (i < 30);
+const html = document.getElementById("htm")
+const pessoas = [
+    {
+        nome: "Amanda",
+        idade: 22,
+        contato: "11987654321"
+    },
+    {
+        nome: "Bruno",
+        idade: 28,
+        contato: "11991234567"
+    },
+    {
+        nome: "Carla",
+        idade: 19,
+        contato: "11999887766"
+    },
+    {
+        nome: "Diego",
+        idade: 31,
+        contato: "11995554433"
+    },
+    {
+        nome: "Fernanda",
+        idade: 25,
+        contato: "11993332211"
+    }
+];
+//foreach ele eo mais completo, porem ele não tem o braek
+pessoas.forEach((element, index) => {
+//Aqui e o templet string, junta texto com vatiavel
+    console.log(`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
+    html.innerHTML = (`${index + 1} Nome: ${element.nome} idade: ${element.idade} contato: ${element.contato}`);
+});
+parametros das funçoes é possivel colocar um valor padrao caso nao seja passado nenhum valor
+function test(message, value = 0 ) {
+    console.log(message, value)
+}
+test( "that`t Amazing" , 1)
+
+function menos (value1 , value2){
+    console.log(value1 - value2)
+    console.log("o")
+}
+menos(10,20)
+function mais (value1 , value2){
+    console.log(value1 + value2)
+}
+mais(10,20)
+function mult (value1 , value2){
+    console.log(value1 * value2)
+}
+mult(10,20)
+function div (value1 , value2){
+    console.log(value1 / value2)
+}
+div(10,20)
+
+Caixa de desconto, se o valor for maior que 30 ele tera desconto de 10% caso contrario nao tera desconto
+
+const desconto = 0.10
+const cart = [11, 30, 2, 41, 52]
+Aqui ele vai separar os valores com desconto e sem desconto
+const ComDesconto = []
+const SemDesconto = []
+Aqui ele vai fazer a verificação se o valor e maior que 30 ele vai aplicar o desconto e colocar no array ComDesconto caso contrario ele vai colocar no array SemDesconto
+for (let i = 0; i < cart.length; i++) {
+    if (cart[i] >= 30) {
+     Ele vai dizer em qual possição ele estar [i]
+        const test = cart[i] - (cart[i] * desconto);
+        Aqui ele vai colocar o valor com desconto no array ComDesconto
+        ComDesconto.push(test)
+    }
+    else {
+        SemDesconto.push(cart[i])
+    }
+}
+
+ let total = 0
+
+for (let i = 0; i < ComDesconto.length; i++) {
+A mesma coisa fazer total = total + o valor
+    total += ComDesconto[i]
+}
+
+for (let i = 0; i < SemDesconto.length; i++) {
+    total += SemDesconto[i]
+}
+Aqui ele vai arredondar o valor para baixo, caso queira arredondar para cima usar Math.ceil(total)
+console.log(Math.floor(total))*/
+
+
+
