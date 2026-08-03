@@ -317,7 +317,10 @@ for (let i = 0; i < SemDesconto.length; i++) {
     total += SemDesconto[i]
 }
 Aqui ele vai arredondar o valor para baixo, caso queira arredondar para cima usar Math.ceil(total)
-console.log(Math.floor(total))*/
+console.log(Math.floor(total))
 
-
+const ArrowFunction = (value1, value2) => {
+    return value1 + value2
+}
+console.log(ArrowFunction(10, 20))*/
 
