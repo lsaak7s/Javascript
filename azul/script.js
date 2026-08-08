@@ -324,7 +324,7 @@ const ArrowFunction = (value1, value2) => {
 }
 console.log(ArrowFunction(10, 20))
 
-Map ele vai percorrer o array e fazer a operação que voce colocar
+//Map ele vai percorrer o array e fazer a operação que voce colocar
 
 const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const result = number.map((value) => { return value * 2 })
@@ -364,4 +364,21 @@ const newlist = list.map((user) => {
     }
 })
 
-console.log(newlist)*/
+console.log(newlist)
+
+//reduce ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um unico valor, diferente do map que retorna um array 
+
+const compras = [
+    { name: "Arroz", price: 5.6 , kg: 1},
+    { name: "feijão", price: 5.1 , kg: 2},
+    { name: "açucar", price: 1.4 , kg: 3},
+    { name: "carne", price: 7.7 , kg: 4},
+    { name: "frutas", price: 3.9 , kg: 5},
+    { name: "verduras", price: 0.1 , kg: 6},
+]
+
+const total = compras.reduce((acc, user) => {
+const value = user.price * user.kg
+return acc + value
+}, 0)
+console.log(`Total: R$ ${total.toFixed(2)}`)*/
