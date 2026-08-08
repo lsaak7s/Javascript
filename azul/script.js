@@ -322,5 +322,46 @@ console.log(Math.floor(total))
 const ArrowFunction = (value1, value2) => {
     return value1 + value2
 }
-console.log(ArrowFunction(10, 20))*/
+console.log(ArrowFunction(10, 20))
 
+Map ele vai percorrer o array e fazer a operação que voce colocar
+
+const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const result = number.map((value) => { return value * 2 })
+console.log(result)
+
+const list = [
+    { name: "Isaac", vip: true },
+    { name: "John", vip: false },
+    { name: "Jane", vip: true },
+    { name: "Bob", vip: false },
+    { name: "Alice", vip: true },
+    { name: "Charlie", vip: false },
+]
+
+const newlist = list.map((user) => {
+    return {
+        name: user.name,
+        bracelet: user.vip ? "preto" : "azul"
+
+    }
+
+})
+console.log(newlist)
+
+const list = [
+    { name: "Isaac", nota: 5 },
+    { name: "John", nota: 5 },
+    { name: "Jane", nota: 1 },
+    { name: "Bob", nota: 7 },
+    { name: "Alice", nota: 3 },
+    { name: "Charlie", nota: 0 },
+]
+const newlist = list.map((user) => {
+    return {
+        name: user.name,
+        nota: user.nota >= 5 ? "Aprovado" : "Reprovado"
+    }
+})
+
+console.log(newlist)*/
