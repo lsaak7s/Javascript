@@ -381,4 +381,35 @@ const total = compras.reduce((acc, user) => {
 const value = user.price * user.kg
 return acc + value
 }, 0)
-console.log(`Total: R$ ${total.toFixed(2)}`)*/
+console.log(`Total: R$ ${total.toFixed(2)}`)
+
+filter ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um novo array com os valores que passaram na condição, diferente do map que retorna um array com todos os valores, e do reduce que retorna um unico valor
+
+const list = [20, 300, 40, 500, 600, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+const newList = list.filter((value) => { 
+    if (value > 100 && value % 2 === 0) {
+        return true
+    }
+    else{
+        return false
+    }
+})
+console.log(newList)*/
+
+const companies = [
+    { name: 'Samsung', marketValue: 50, CEO: 'Kim Hyun Suk', foundedOn: 1938 },
+    { name: 'Microsoft', marketValue: 415, CEO: 'Satya Nadella', foundedOn: 1975 },
+    { name: 'Intel', marketValue: 117, CEO: 'Brian Krzanich', foundedOn: 1968 },
+    { name: 'Facebook', marketValue: 383, CEO: 'Mark Zuckerberg', foundedOn: 2004 },
+    { name: 'Spotify', marketValue: 30, CEO: 'Daniel Ek', foundedOn: 2006 },
+    { name: 'Apple', marketValue: 845, CEO: 'TimCook', foundedOn: 1976 }
+];
+
+const marketValueOldCompany = companies.map(Company => {
+    Company.marketValue = Company.marketValue + (Company.marketValue / 10)
+    return Company
+}).filter(Company => Company.foundedOn < 1990 )
+
+const old = marketValueOldCompany
+
+console.table(old)
