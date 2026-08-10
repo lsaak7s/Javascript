@@ -317,7 +317,118 @@ for (let i = 0; i < SemDesconto.length; i++) {
     total += SemDesconto[i]
 }
 Aqui ele vai arredondar o valor para baixo, caso queira arredondar para cima usar Math.ceil(total)
-console.log(Math.floor(total))*/
+console.log(Math.floor(total))
 
+const ArrowFunction = (value1, value2) => {
+    return value1 + value2
+}
+console.log(ArrowFunction(10, 20))
 
+//Map ele vai percorrer o array e fazer a operação que voce colocar
 
+const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const result = number.map((value) => { return value * 2 })
+console.log(result)
+
+const list = [
+    { name: "Isaac", vip: true },
+    { name: "John", vip: false },
+    { name: "Jane", vip: true },
+    { name: "Bob", vip: false },
+    { name: "Alice", vip: true },
+    { name: "Charlie", vip: false },
+]
+
+const newlist = list.map((user) => {
+    return {
+        name: user.name,
+        bracelet: user.vip ? "preto" : "azul"
+
+    }
+
+})
+console.log(newlist)
+
+const list = [
+    { name: "Isaac", nota: 5 },
+    { name: "John", nota: 5 },
+    { name: "Jane", nota: 1 },
+    { name: "Bob", nota: 7 },
+    { name: "Alice", nota: 3 },
+    { name: "Charlie", nota: 0 },
+]
+const newlist = list.map((user) => {
+    return {
+        name: user.name,
+        nota: user.nota >= 5 ? "Aprovado" : "Reprovado"
+    }
+})
+
+console.log(newlist)
+
+//reduce ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um unico valor, diferente do map que retorna um array 
+
+const compras = [
+    { name: "Arroz", price: 5.6 , kg: 1},
+    { name: "feijão", price: 5.1 , kg: 2},
+    { name: "açucar", price: 1.4 , kg: 3},
+    { name: "carne", price: 7.7 , kg: 4},
+    { name: "frutas", price: 3.9 , kg: 5},
+    { name: "verduras", price: 0.1 , kg: 6},
+]
+
+const total = compras.reduce((acc, user) => {
+const value = user.price * user.kg
+return acc + value
+}, 0)
+console.log(`Total: R$ ${total.toFixed(2)}`)
+
+filter ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um novo array com os valores que passaram na condição, diferente do map que retorna um array com todos os valores, e do reduce que retorna um unico valor
+
+const list = [20, 300, 40, 500, 600, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+const newList = list.filter((value) => { 
+    if (value > 100 && value % 2 === 0) {
+        return true
+    }
+    else{
+        return false
+    }
+})
+console.log(newList)
+Valorizadas
+const companies = [
+    { name: 'Samsung', marketValue: 50, CEO: 'Kim Hyun Suk', foundedOn: 1938 },
+    { name: 'Microsoft', marketValue: 415, CEO: 'Satya Nadella', foundedOn: 1975 },
+    { name: 'Intel', marketValue: 117, CEO: 'Brian Krzanich', foundedOn: 1968 },
+    { name: 'Facebook', marketValue: 383, CEO: 'Mark Zuckerberg', foundedOn: 2004 },
+    { name: 'Spotify', marketValue: 30, CEO: 'Daniel Ek', foundedOn: 2006 },
+    { name: 'Apple', marketValue: 845, CEO: 'TimCook', foundedOn: 1976 }
+];
+
+const marketValueOldCompany = companies.map(Company => {
+     Company.marketValue = Company.marketValue + (Company.marketValue / 10)
+    return Company
+})
+.filter(Company => Company.foundedOn < 1990)
+//.reduce((acc, Company) => acc + Company.marketValue, 0)
+
+const old = marketValueOldCompany
+
+const companies = [
+    { name: 'Samsung', marketValue: 50, CEO: 'Kim Hyun Suk', foundedOn: 1938 },
+    { name: 'Microsoft', marketValue: 415, CEO: 'Satya Nadella', foundedOn: 1975 },
+    { name: 'Intel', marketValue: 117, CEO: 'Brian Krzanich', foundedOn: 1968 },
+    { name: 'Facebook', marketValue: 383, CEO: 'Mark Zuckerberg', foundedOn: 2004 },
+    { name: 'Spotify', marketValue: 30, CEO: 'Daniel Ek', foundedOn: 2006 },
+    { name: 'Apple', marketValue: 845, CEO: 'TimCook', foundedOn: 1976 }
+];
+
+const marketValueOldCompany = companies.map(Company => {
+     Company.marketValue = Company.marketValue - (Company.marketValue / 10)
+    return Company
+})
+.filter(Company => Company.foundedOn < 1980)
+//.reduce((acc, Company) => acc + Company.marketValue, 0)
+
+const old = marketValueOldCompany
+console.table(old)*/
