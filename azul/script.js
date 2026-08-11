@@ -324,6 +324,10 @@ const ArrowFunction = (value1, value2) => {
 }
 console.log(ArrowFunction(10, 20))
 
+
+                                        Map return Filter
+
+
 //Map ele vai percorrer o array e fazer a operação que voce colocar
 
 const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -383,7 +387,7 @@ return acc + value
 }, 0)
 console.log(`Total: R$ ${total.toFixed(2)}`)
 
-filter ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um novo array com os valores que passaram na condição, diferente do map que retorna um array com todos os valores, e do reduce que retorna um unico valor
+//filter ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um novo array com os valores que passaram na condição, diferente do map que retorna um array com todos os valores, e do reduce que retorna um unico valor
 
 const list = [20, 300, 40, 500, 600, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
 const newList = list.filter((value) => { 
@@ -431,4 +435,61 @@ const marketValueOldCompany = companies.map(Company => {
 //.reduce((acc, Company) => acc + Company.marketValue, 0)
 
 const old = marketValueOldCompany
-console.table(old)*/
+console.table(old) //peguei as informa
+
+
+                                           Metodos Array
+
+
+const myArray = [`abacate`,`limão`,`arroz`]
+
+myArray.push(`abacte`) //Adiciona iteis no Array
+
+const myArray = [`abacate`,`limão`,`arroz`]
+
+console.log(myArray.length) //Diz Quantos iteis tem no array 
+
+const myArray = [`abacate`,`limão`,`arroz`]
+myArray.sort() //Ele deixa os iteis em ordem Alfabetica
+console.log(myArray)
+
+const myArray = [`abacate`,`limão`,`arroz`]
+
+delete myArray [1] //Ele exclui um intem do array, porem o lugar fica resevado
+
+console.log(myArray)
+
+const users = [
+    { name: 'Nico', credit: 600 },
+    { name: 'Maria', credit: 900 },
+    { name: 'Joana', credit: 300 },
+    { name: 'Vanessa', credit: 200 },
+];
+
+const istru = users.every(user => user.credit >= 200 <=1000)
+//Ele so vai retornar Tru se todos forem Tru
+console.log(istru)
+
+const users = [
+    { name: 'Nico', credit: 600 },
+    { name: 'Maria', credit: 900 },
+    { name: 'Joana', credit: 300 },
+    { name: 'Vanessa', credit: 200 },
+];
+
+const istru = users.some(user => user.credit >= 1000)
+//Ele so vai retornar Tru se Apenas um for Tru
+console.log(istru)
+
+const number = [1, 2, 3, 4]
+number.fill(`Abacate`, 1, 3)//Ele vai preencher com a informação que colocamos ele tem como colocamos inicio e fim para começar
+console.log(number)
+
+const users = [
+    { name: 'Nico', credit: 600 },
+    { name: 'Maria', credit: 900 },
+    { name: 'Joana', credit: 300 },
+    { name: 'Vanessa', credit: 200 },
+];
+const contatos = users.find(users => users.name === `Maria`);//Find ele buscar oque voce pediu
+console.log(contatos)*/
