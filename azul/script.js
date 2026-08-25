@@ -639,7 +639,7 @@ const user = {
 user.name = "joao"
 
 array[0] = 2 
-
+ 
 console.log(myVar)
 console.log(myLet)
 console.log(myConst)
