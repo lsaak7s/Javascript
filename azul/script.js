@@ -128,7 +128,7 @@ const myObject = {
 const my = "30"
 
                                       //delete, apaga um parametro  myObject.cidade typeof diz qual o tipo number string etc
- 
+
 console.log(typeof myObject)
 
 const temp = 41
@@ -151,7 +151,7 @@ else if (temp >= 41 && temp <= 45) {
 
 
 const salario = 15000
-salario <= 3000 ? console.log("junior") : salario >= 3000  && salario <=8000 ? console.log("pleno") : salario >= 8001  && salario <=15000 ? console.log("Senior") : console.log("Diretor") 
+salario <= 3000 ? console.log("junior") : salario >= 3000  && salario <=8000 ? console.log("pleno") : salario >= 8001  && salario <=15000 ? console.log("Senior") : console.log("Diretor")
 
 const temp = 10
 switch (temp) {
@@ -221,9 +221,9 @@ const user = { nome: "isaac", age: "20", street: "Rua Merachal" }
 
 for (const key in user) {
 
-                                                          //Agora se quiser pegar o valor tambem 
+                                                          //Agora se quiser pegar o valor tambem
 
-                                             // usando desse jeito ele esta pegando os valores tambem 
+                                             // usando desse jeito ele esta pegando os valores tambem
 
     console.log(`${key} ${user[key]}`)
 
@@ -239,7 +239,7 @@ while (i < 1) {
 }
 console.log("name")
 
-                                                        //do while, faz e depois verifica  
+                                                        //do while, faz e depois verifica
 
 let i = 0
 do {
@@ -403,7 +403,7 @@ const newlist = list.map((user) => {
 
 console.log(newlist)
 
-//reduce ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um unico valor, diferente do map que retorna um array 
+//reduce ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um unico valor, diferente do map que retorna um array
 
 const compras = [
     { name: "Arroz", price: 5.6 , kg: 1},
@@ -423,7 +423,7 @@ console.log(`Total: R$ ${total.toFixed(2)}`)
 //filter ele vai percorrer o array e fazer a operação que voce colocar, porem ele vai retornar um novo array com os valores que passaram na condição, diferente do map que retorna um array com todos os valores, e do reduce que retorna um unico valor
 
 const list = [20, 300, 40, 500, 600, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
-const newList = list.filter((value) => { 
+const newList = list.filter((value) => {
     if (value > 100 && value % 2 === 0) {
         return true
     }
@@ -479,25 +479,25 @@ console.table(old) //peguei as informa
 
 const myArray = [`abacate`,`limão`,`arroz`]
 
-myArray.push(`abacte`) 
+myArray.push(`abacte`)
 
-                               //length, Diz Quantos iteis tem no array 
+                               //length, Diz Quantos iteis tem no array
 
 const myArray = [`abacate`,`limão`,`arroz`]
 
-console.log(myArray.length) 
+console.log(myArray.length)
 
                            //sort, Ele deixa os iteis em ordem Alfabetica
 
 const myArray = [`abacate`,`limão`,`arroz`]
-myArray.sort() 
+myArray.sort()
 console.log(myArray)
 
                   //delete, Ele exclui um intem do array, porem o lugar fica resevado
 
 const myArray = [`abacate`,`limão`,`arroz`]
 
-delete myArray [1] 
+delete myArray [1]
 
 console.log(myArray)
 
@@ -550,7 +550,7 @@ const users = [
 ];
 const contatos = users.findIndex(users => users.name === `Maria`);
 
-//E com essa informação podemos fazer oque quiser 
+//E com essa informação podemos fazer oque quiser
 users[contatos].name = `Maria joaquina`;
 console.table(users)
 
@@ -593,4 +593,55 @@ const user = [`fernanda`, `amanda`, `joana`, `faro`, `tulio`, `alemã`];
 
 user.splice(0,5, `patricia`)
 
-console.table(user)*/
+console.table(user)
+
+                                                   //Json
+                            //Um jeito de se comunicar com outras linguagens
+
+//json em um Object
+const users = {
+    "nome": "Isaac",
+    "cargo": "Desenvolvedor Full Stack",
+    "linguagens": ["JavaScript", "Node.js"],
+    "estudando": true
+}
+
+                //JSON.parse converter um json em object
+             //JSON.stringify converter um javascript em json
+const userJson = JSON.stringify(users)
+const userJsonTojs = JSON.parse(userJson)
+
+console.log(users)
+console.log(userJson)
+console.log(userJsonTojs)
+
+                                            //Variaveis
+
+        //O grande problema do var E que ele pode ser chamado de qualquer lugar
+
+let myLet = "let"
+const myConst = "const"
+
+if (alert) {
+
+var myVar = "var"
+
+}
+
+           //Conseguimos mudar o valor das conts se fordentro de objetos
+
+const array = [1,2,3,4,5]
+
+const user = {
+    name: "isaac"
+}
+
+user.name = "joao"
+
+array[0] = 2 
+
+console.log(myVar)
+console.log(myLet)
+console.log(myConst)
+console.log(array)
+console.log(user)*/
