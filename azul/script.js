@@ -644,11 +644,48 @@ console.log(myVar)
 console.log(myLet)
 console.log(myConst)
 console.log(array)
-console.log(user)*/
+console.log(user)
+
+          //Usando isso aprendemos como exportar e receber informações de outras pastas
+                       //module.exports & const importar = require
 
 const user = {
     name: "isaac",
     age: 20
 }
 
+//Deixar disponivel para poder ser pego o valor
 module.exports = person
+//Pegar os valores de outras pastas/modulos
+const importar = require('./person')
+
+                          //Escopo global e local & this
+
+//todo o codigo pegar essa variavel
+const user = "Global"
+//apenas dentros da functio pode ser chamado
+function local() {
+    const user = "local"
+}
+
+             //this sempre é referente ao module.exportes no escopo global 
+
+const user = {
+    name: "isaac",
+    age: 20,
+    //Assim que adiciona funções em objetos
+    talk: function () {
+        //Agora o this fica de olho no user porque ele estar dentro dele/escopo
+        console.log(this.age)
+    }
+}
+//Chamando a função
+user.talk()
+
+function thiss() {
+    //Agora como this não tem um dono ele voltou para o Global
+    this.console.log("Agora sou Global")
+}
+//Chamando a função
+thiss()
+*/
