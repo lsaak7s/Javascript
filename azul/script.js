@@ -645,4 +645,10 @@ console.log(myLet)
 console.log(myConst)
 console.log(array)
 console.log(user)*/
- 
+
+const user = {
+    name: "isaac",
+    age: 20
+}
+
+module.exports = person
