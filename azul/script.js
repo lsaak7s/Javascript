@@ -689,7 +689,7 @@ function thiss() {
 //Chamando a função
 thiss()
 
-                       //try avisa se teve algun erro para o catch cath
+                       //Try avisa se teve algun erro para o Catch 
 
 app.post('/usuarios', async (req, res) => {
     
