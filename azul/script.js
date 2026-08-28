@@ -638,8 +638,8 @@ const user = {
 
 user.name = "joao"
 
-array[0] = 2 
- 
+array[0] = 2
+
 console.log(myVar)
 console.log(myLet)
 console.log(myConst)
@@ -668,7 +668,7 @@ function local() {
     const user = "local"
 }
 
-             //this sempre é referente ao module.exportes no escopo global 
+             //this sempre é referente ao module.exportes no escopo global
 
 const user = {
     name: "isaac",
@@ -688,4 +688,29 @@ function thiss() {
 }
 //Chamando a função
 thiss()
-*/
+
+                       //try avisa se teve algun erro para o catch cath
+
+app.post('/usuarios', async (req, res) => {
+    
+    //try ele verifica se teve algun erro
+    try {
+        await prisma.user.create({
+            data: {
+                email: req.body.email,
+                age: req.body.age,
+                name: req.body.name,
+            },
+        });
+
+        res.status(201).json({ mensagem: "Usuario Criado com sucesso" });
+
+    
+    }//se teve ele avisa para o catch
+     catch (err) {
+        return response.status(500).json({ erro: err.mensagem });
+    
+    }// e se quiser conferir que rodou mesmo usar o finally
+    finally{console.log("terminou")}
+    
+})*/
