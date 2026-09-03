@@ -713,4 +713,31 @@ app.post('/usuarios', async (req, res) => {
     }// e se quiser conferir que rodou mesmo usar o finally
     finally{console.log("terminou")}
     
-})*/
+})
+
+                                 //Class
+                            //Forma do bolo
+
+class User {
+//Sempre que usemos o contructor ele sempre seja o primeiro a aparecer, mais facil Porque fica em um unico lugar
+    constructor(name, age) {
+        console.log(`My Name ${name} my age ${age}`)
+       this.name = name;
+       this.age = age;
+    }
+
+    //Assim que adiciona funções em objetos
+    talk() {
+        console.log(`My Name ${this.age} My Age ${this.age}`);
+    }
+}
+               // Podemos mandar as informação por aqui
+const newPerson = new User("isaac",20)
+const newPerson1 = new User("luiza",30)
+const newPerson2 = new User("Amanda",40)
+const newPerson3 = new User("Julio",27)
+
+newPerson.talk()
+
+console.log(newPerson)
+*/
